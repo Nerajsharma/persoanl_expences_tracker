@@ -1,0 +1,686 @@
+@import url('https://nirajkumarsharma.com.np/icons/main.css');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+:root {
+    --primary-color: #459ea7;
+    --secondar-color: #B6244F;
+    --income-primary: rgb(211, 25, 62);
+    --green: #60B478;
+    --terterycolor: #9A7CF8;
+
+}
+
+::-webkit-scrollbar {
+    width: 3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(0, 8, 255);
+    border-radius: 100%;
+}
+
+.nb_colsection {
+    display: none;
+}
+
+.active_colsection {
+    display: block;
+}
+
+.main_content {
+    height: 90vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+}
+
+.nav_bar_dashboard {
+    padding: 0.5em;
+}
+
+.nav_bar_dashboard div img {
+    width: 30px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    /* padding: 2px; */
+    border: 2px solid #8987be;
+    box-shadow: 0 0 3px #161459;
+
+}
+
+.nav_bar_dashboard div:nth-child(2) {
+    text-shadow: 0 0 5px rgb(157, 210, 242), 0 0 5px rgb(193, 50, 50);
+}
+
+.nav_bar_dashboard div {
+    cursor: pointer;
+}
+
+#dashboard_lower_icon div button {
+    background-color: transparent;
+    padding: 5px;
+    margin: 3px 5px;
+    cursor: pointer;
+    position: relative;
+    border-radius: 50%;
+    padding: 6px 7px;
+    border: none;
+    outline: none;
+    background-color: #dbdaff;
+    border: 1px solid #cfceee;
+    box-shadow: 0 0 5px #bdbcd0;
+    transition: 0.3s;
+
+}
+
+#dashboard_lower_icon div button i.nb {
+    font-size: 20px;
+}
+
+#dashboard_lower_icon div button:hover {
+    background-color: #bbb9ee;
+    border: 1px solid #adacdb;
+    box-shadow: 0 0 5px #9998b9;
+}
+
+.bottom_navbar {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    right: 0;
+    background-color: #e6e6e6cd;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgb(122, 122, 122);
+    /* padding: 5px; */
+}
+
+.bottom_navbar div {
+    padding: 0.5em;
+}
+
+.bottom_navbar div button {
+    padding: 0.45em 0.5em;
+    border-radius: 50px;
+    border: none;
+    background-color: rgba(245, 245, 245, 0.708);
+    cursor: pointer;
+}
+
+.bottom_navbar div button i.nb {
+    /* width: 17px; */
+    font-size: 18px;
+}
+
+#addfrombtn {
+    background-color: #4694b5;
+    padding: 8px;
+    /* font-size: 20px; */
+    margin-top: -30px;
+}
+
+.section_header {
+    margin-top: 0.5em;
+    position: relative;
+    text-decoration: underline;
+    position: sticky;
+    top: 0px;
+    background-color: white;
+}
+
+.section_header .word::first-letter {
+    font-weight: bold;
+    font-size: 22px;
+    margin-left: 0.5em;
+}
+
+#income_section .section_header .word:nth-child(2) {
+    color: rgb(30, 116, 159);
+    text-decoration: underline;
+}
+
+#expence_section .section_header .word:nth-child(2) {
+    color: rgb(217, 19, 49);
+    text-decoration: underline;
+}
+
+/*.section_header::before{
+     content: '';
+position: absolute;
+bottom: -10px;
+left: 48%;
+width: 10px;
+aspect-ratio: 1/1;
+background-color: rgb(57, 148, 213);
+border-radius: 5px 0px 5px 5px;
+rotate: 45deg;
+}
+.section_header::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    right: 42%;
+    width: 10px;
+    aspect-ratio: 1/1;
+    background-color: rgb(57, 148, 213);
+    border-radius: 0px 5px 5px 5px;
+    rotate: -45deg;
+} */
+
+/* #income_details_card .nb_sm_col_10 .nb_card {
+    padding: 1.5em;
+} */
+#income_details_card .nb_sm_col_10 .nb_card {
+    height: 20vh;
+    background: #12c2e9;
+    background: linear-gradient(45deg, #f9434fdc, #c465f3d7, #5ac9e2f3);
+    box-shadow: 0 0 5px rgb(86, 85, 85);
+    padding: 0.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#income_details_card .nb_sm_col_10 .nb_card .bankbalcmoney_rs {
+    font-size: 14px;
+    margin: 8px 0;
+}
+
+#income_details_card .nb_sm_col_10 .nb_card .bankbalcmoney_rs #bankbalcmoney {
+    font-size: 28px;
+}
+
+#income_details_card .nb_sm_col_10 .nb_card p.bank_blance {
+    font-size: 12px;
+}
+
+#income_details_card .nb_sm_col_10:nth-child(1) .nb_card {
+    overflow: hidden;
+}
+
+#income_details_card .nb_sm_col_10 .nb_card .nb_row p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 14px;
+    letter-spacing: 0.8px;
+}
+
+#income_details_card .nb_sm_col_10:nth-child(2) .nb_card {
+    background-color: rgba(235, 95, 165, 0.743);
+    overflow: hidden;
+}
+
+#income_details_card .nb_sm_col_10:nth-child(3) .nb_card {
+    background-color: rgba(223, 217, 62, 0.743);
+    overflow: hidden;
+}
+
+#income_details_card .nb_card .nb_row .nb_col_2 {
+    width: 30px;
+    /* background-color: red; */
+    padding: 0.4em 0.5em;
+    border-radius: 50%;
+}
+
+#income_details_card .nb_sm_col_10:nth-child(1) .nb_card .nb_row .nb_col_2 {
+    background-color: rgb(92, 112, 169);
+}
+
+#income_details_card .nb_sm_col_10:nth-child(2) .nb_card .nb_row .nb_col_2 {
+    background-color: rgb(230, 194, 38);
+}
+
+#income_details_card .nb_sm_col_10:nth-child(3) .nb_card .nb_row .nb_col_2 {
+    background-color: rgb(22, 196, 112);
+}
+
+#income_details_card .nb_card .nb_row .nb_col_8 .card_title {
+    font-size: 13px;
+}
+
+#income_details_card .nb_card .nb_row .nb_col_8 .card_title_money {
+    font-size: 22px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#income_section_table tr th {
+    background-color: var(--income-primary);
+}
+
+#income_section_table tr td {
+    padding: 8px 5px;
+}
+
+#income_section_table .nb_col_9 {
+    background-color: rgba(185, 209, 240, 0.934);
+    margin: 0.5em 0px;
+    padding: 0.5em;
+    border-radius: 5px;
+    box-shadow: 0 0 5px var(--primary-color);
+}
+
+#income_section_table .nb_col_9 .sendername {
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+#income_section_table .nb_col_9 .sending_purpose {
+    font-size: 12px;
+    text-transform: capitalize;
+}
+
+#income_section_table .nb_col_9 .nb_row .nb_col_3 {
+    font-size: 12px;
+    vertical-align: bottom;
+}
+
+#income_section_table .nb_col_9 .nb_row .nb_col_3 .sending_amount {
+    font-size: 16px;
+}
+
+.income_form {
+    position: absolute;
+    background-color: #719ac3f3;
+    width: 90%;
+    display: none;
+    border-radius: 5px;
+    box-shadow: 0 0 8px var(--primary-color);
+    z-index: 10;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#expence_section_table .nb_col_9 {
+    background-color: rgba(232, 166, 191, 0.777);
+    margin: 0.5em 0px;
+    padding: 0.5em;
+    border-radius: 5px;
+    box-shadow: 0 0 5px crimson;
+}
+
+#expence_section_table .nb_col_9 .expancethingsname {
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+#expence_section_table .nb_col_9 .expance_place {
+    font-size: 12px;
+    text-transform: capitalize;
+}
+
+#expence_section_table .nb_col_9 .nb_row .nb_col_3 {
+    font-size: 12px;
+    vertical-align: bottom;
+}
+
+#expence_section_table .nb_col_9 .nb_row .nb_col_3 .spend_amount {
+    font-size: 16px;
+}
+
+form input {
+    margin-bottom: 0.5em;
+}
+
+form select {
+    margin-bottom: 0.5em;
+}
+
+.expance_form {
+    position: absolute;
+    width: 90%;
+    top: 0%;
+    left: 0;
+    background-color: #e0568b;
+    border-radius: 5px;
+    box-shadow: 0 0 5px crimson;
+}
+
+.creaditdebit_box {
+    background-color: #e7e0d8;
+    border-radius: 5px;
+    height: 200px;
+    overflow: auto;
+    margin-bottom: 1em;
+}
+
+.creaditdebit_box .lendnavbar {
+    position: sticky;
+    top: 0px;
+    z-index: 99;
+}
+
+.creaditdebit_box div div button {
+    background-color: #aef2fa;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 0.3em;
+    cursor: pointer;
+}
+
+.creaditdebit_box div div button.lendbtnactive {
+    background-color: crimson;
+    color: whitesmoke;
+}
+
+#lend_section .nb_row .nb_col_9 .nb_row {
+    background-color: rgba(241, 138, 169, 0.908);
+    margin: 5px 0;
+    padding: 5px 8px;
+    border-radius: 4px;
+    box-shadow: 0 0 1px crimson;
+}
+
+#lend_section .nb_row .nb_col_9 .nb_row p sub {
+    font-size: 12px;
+}
+
+
+#debet_section .nb_row .nb_col_9 .nb_row {
+    background-color: rgba(110, 192, 217, 0.908);
+    margin: 5px 0;
+    padding: 5px 8px;
+    border-radius: 4px;
+    box-shadow: 0 0 1px rgb(20, 180, 220);
+}
+
+#debet_section .nb_row .nb_col_9 .nb_row p sub {
+    font-size: 12px;
+}
+
+#profile_div_section {
+    position: fixed;
+    z-index: 1000;
+    bottom: 10vh;
+    /* border: 1px solid red; */
+    right: 0px;
+    width: 100%;
+    display: none;
+}
+
+#profile_div_section .profile_section_wapper {
+    margin: 0 8px;
+    /* border: 1px solid black; */
+    width: 90%;
+    padding: 5px 8px;
+    border-radius: 5px;
+    background-color: #e6f9fbfb;
+    box-shadow: 0 0 5px black;
+}
+
+#profile_div_section .profile_section_wapper div div .nb_col_10 {
+    margin: 5px 0px;
+    cursor: pointer;
+}
+
+
+.nb_crossb::before {
+    content: '✘';
+    color: crimson;
+    margin: 0 5px;
+}
+
+.changepassword_section_outer {
+    background-color: #cfc0f8;
+    margin: 5%;
+    width: 90%;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #464476;
+}
+
+.room_section_box .nb_row .nb_col_9 .nb_row {
+    background-color: var(--terterycolor);
+    box-shadow: 0 0 3px #464476;
+    color: white;
+    margin: 7px 0;
+    padding: 5px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.room_section_box .nb_row .nb_col_9 .nb_row .room_month_name {
+    font-size: 16px;
+    font-weight: bold;
+    color: #161459;
+}
+
+.nb_tick::before {
+    content: '✔';
+    margin: 0 5px;
+    color: rgb(0, 127, 0);
+    font-weight: bold;
+}
+
+.room_section_box .nb_row .nb_col_9 .nb_row .room_month_rent sub i.upgreen {
+    font-size: 12px;
+    writing-mode: vertical-rl;
+    transform: rotate(-90deg);
+    /* color: green; */
+    margin-right: 1px;
+}
+
+.room_section_box .nb_row .nb_col_9 .nb_row .room_month_rent sub i.downred {
+    font-size: 12px;
+    writing-mode: vertical-rl;
+    transform: rotate(90deg);
+    /* color: crimson; */
+    margin-right: 1px;
+}
+
+#roomdetaling_section_form_cover,
+#roomdetaling_section_form_coverrr {
+    position: absolute;
+    top: 5%;
+    left: 0%;
+    width: 90%;
+    background-color: #7e7cb8;
+    border-radius: 5px;
+    box-shadow: 0 0 5px darkblue;
+}
+
+#topnotification {
+    display: none;
+    font-size: 16px;
+    text-align: center;
+    width: 60%;
+    /* color: crimson; */
+    position: fixed;
+    top: 1em;
+    left: 20%;
+    padding: 5px 6px;
+    border-radius: 4px;
+    box-shadow: 0 0 5px black;
+    z-index: 99999999;
+    color: white;
+}
+
+#topnotification.errornoti {
+    background-color: crimson;
+}
+
+#topnotification.sucessnoti {
+    background-color: rgb(80, 202, 202);
+}
+
+.room_section_box .nb_row .nb_col_9 .nb_row {
+    position: relative;
+}
+
+select {
+    width: 50%;
+    font-size: 16px;
+    padding: 1px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#lend_clear_form,
+#debet_clear_form {
+    display: none;
+    position: fixed;
+    background-color: #bed8ef;
+    border-radius: 5px;
+    box-shadow: 0 0 5px black;
+    top: 1%;
+
+}
+
+#lend_clear_form form label,
+#debet_clear_form form label {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.logout_section_wapper {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logout_section_outer {
+    background-color: #c1e8ec;
+    padding: 1em;
+    box-shadow: 0 0 5px black;
+}
+
+.logout_section_outer p {
+    text-align: center;
+    font-size: 18px;
+    margin: 3px 0px;
+    font-weight: bold;
+}
+
+.button_box table {
+    border-collapse: separate;
+    border-spacing: 5px;
+    /* border-radius: 5px; */
+}
+
+
+.button_box table tr,
+.button_box table tr:hover {
+    background-color: transparent;
+}
+
+#calculator_icon {
+    position: fixed;
+    top: 4%;
+    right: 0%;
+    padding: 5px 7px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    background-color: #e0e4e5;
+    box-shadow: 0 0 5px rgb(101, 101, 101);
+}
+
+#calculator_section_wapper {
+    display: none;
+    width: 90%;
+    border-radius: 5px;
+    position: fixed;
+    top: 10%;
+    right: 3%;
+    box-shadow: 0 0 5px black;
+    background-color: white;
+    z-index: 999999;
+    user-select: none;
+    overflow: hidden;
+}
+
+.calculator_section_cover {
+    padding: 10px;
+}
+
+#screen_outer {
+    border: 2px solid rgb(179, 179, 179);
+    background-color: rgb(248, 244, 244);
+    border-radius: 5px;
+    padding: 5px 8px;
+    margin-bottom: 1em;
+    text-align: right;
+    height: 3.5em;
+}
+
+#screen_outer #ans_screen {
+    font-size: 22px;
+}
+
+.calculator .button_box {
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #eefafdee;
+}
+
+.button_box table tr td {
+    border: 1px solid rgb(197, 197, 197);
+    background-color: rgb(239, 239, 239);
+    border-radius: 3px;
+    cursor: pointer;
+    padding: 8px;
+    font-size: 18px;
+}
+
+.button_box table tr td.orange {
+    background-color: rgb(254, 206, 214);
+    border-color: #eefcff;
+    /* color: white; */
+    font-weight: bold;
+}
+
+.button_box table tr td i.nb_tag1 {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+}
+
+#campusdetaling_section .section_header .word:nth-child(2) {
+    color: var(--terterycolor);
+}
+
+#campusbill_section>.nb_col_9 {
+    margin: 0.4em 0;
+    background-color: var(--terterycolor);
+    border-radius: 3px;
+    box-shadow: 0 0 3px rgb(122, 121, 121);
+}
+
+#campusbill_section>.nb_col_9 .nb_card {
+    padding: 0.5em;
+}
+
+#campusbill_section>.nb_col_9 .nb_card .billdetails {
+    font-size: 17px;
+    text-transform: capitalize;
+}
+
+#campusdetaling_section_form_cover {
+    display: none;
+    background-color: white;
+    box-shadow: 0 0 5px black;
+    width: 90%;
+    border-radius: 5px;
+}
